@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "IfEx"
   s.version      = "0.0.1"
-  s.summary      = "A short description of IfEx."
+  s.summary      = "IfEx is a pod that allow to edit exif data of UIImage"
   s.homepage     = "http://ya.ru"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Nikita2k/podTutorial.git" }
+  s.source       = { :git => "https://github.com/Nikita2k/podTutorial.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
