@@ -7,6 +7,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Nikita2k/SimpleExif"
   s.license      = { :type => "MIT", :file => "LICENCE" }
 
+  s.platform = :ios, '5.0'
+  
   s.author    = "Nikita Took"
 
   s.source       = { :git => "https://github.com/Nikita2k/SimpleExif.git", :tag => s.version.to_s }
