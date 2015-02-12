@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENCE" }
 
   s.platform = :ios, '5.0'
+  s.requires_arc = true
   
   s.author    = "Nikita Took"
 
