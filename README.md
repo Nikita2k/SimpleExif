@@ -7,6 +7,10 @@ Currently SimpleExif supports adding:
 - Created timestamp
 - Location
 
+# Installation
+
+Just add `pod 'SimpleExif'` to your Podfile!
+
 # Usage
 
 Working example can be found in Project dir, but here is the basics:
