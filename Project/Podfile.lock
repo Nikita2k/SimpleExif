@@ -2,13 +2,18 @@ PODS:
   - SimpleExif (0.0.1)
 
 DEPENDENCIES:
-  - SimpleExif (from `..`)
+  - SimpleExif (from `https://github.com/Nikita2k/SimpleExif.git`)
 
 EXTERNAL SOURCES:
   SimpleExif:
-    :path: ..
+    :git: https://github.com/Nikita2k/SimpleExif.git
+
+CHECKOUT OPTIONS:
+  SimpleExif:
+    :commit: 9a65d939c531e3f8d683c658f2e878ce2b83c869
+    :git: https://github.com/Nikita2k/SimpleExif.git
 
 SPEC CHECKSUMS:
-  SimpleExif: 3744be2ddb014714e10727fb4c338aa843a4c5a3
+  SimpleExif: 51d132f76cf84c1db11e375e5afe74d364507cd3
 
 COCOAPODS: 0.35.0

@@ -1,1 +1,1 @@
-../../../../../Classes/UIImage+Exif.h
+../../../SimpleExif/Classes/UIImage+Exif.h
