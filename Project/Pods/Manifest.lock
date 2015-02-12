@@ -1,0 +1,14 @@
+PODS:
+  - SimpleExif (0.0.1)
+
+DEPENDENCIES:
+  - SimpleExif (from `..`)
+
+EXTERNAL SOURCES:
+  SimpleExif:
+    :path: ..
+
+SPEC CHECKSUMS:
+  SimpleExif: 3744be2ddb014714e10727fb4c338aa843a4c5a3
+
+COCOAPODS: 0.35.0
