@@ -16,6 +16,7 @@
 - (void)addUserComment:(NSString*)comment;
 - (void)addCreationDate:(NSDate *)date;
 - (void)addDescription:(NSString*)description;
+- (void)addDigitizedDate:(NSDate *)date;
 
 - (NSDictionary *)exifData;
 @end

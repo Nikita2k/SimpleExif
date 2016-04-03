@@ -84,6 +84,12 @@
     
 }
 
+- (void)addDigitizedDate:(NSDate *)date {
+
+    NSString *dateString = [self getUTCFormattedDate:date];
+    [self.exifDictionary setObject:dateString forKey:(NSString*)kCGImagePropertyExifDateTimeDigitized];
+}
+
 - (void)addCreationDate:(NSDate *)date {
     
     NSString *dateString = [self getUTCFormattedDate:date];
