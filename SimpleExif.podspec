@@ -7,7 +7,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Nikita2k/SimpleExif"
   s.license      = { :type => "MIT", :file => "LICENCE" }
 
-  s.platform = :ios, '5.0'
+  s.ios.deployment_target = '5.0'
+  s.osx.deployment_target = '10.0'
+
   s.requires_arc = true
   
   s.author    = "Nikita Took"
@@ -15,6 +17,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Nikita2k/SimpleExif.git", :tag => s.version.to_s }
 
   s.source_files  = "Classes", "Classes/*.{h,m}"
+  s.ios.source_files = 'Classes/ios/**/*.{h,m}'
+  s.osx.source_files = 'Classes/osx/**/*.{h,m}'
+
   s.exclude_files = "Classes/Exclude"
 
 end
