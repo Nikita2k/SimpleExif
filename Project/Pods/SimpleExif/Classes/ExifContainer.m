@@ -10,6 +10,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import "ExifContainer.h"
 
+NSString const * kCGImagePropertyProjection = @"ProjectionType";
+
 @interface ExifContainer ()
 
 @property (nonatomic, strong) NSMutableDictionary *imageMetadata;
@@ -80,14 +82,16 @@
 
 - (void)addUserComment:(NSString*)comment {
     
-    [self.exifDictionary setObject:comment forKey:(NSString*)kCGImagePropertyExifUserComment];
+    NSString *key = kCGImagePropertyExifUserComment;
+    [self setValue:comment forExifKey:key];
     
 }
 
 - (void)addCreationDate:(NSDate *)date {
     
     NSString *dateString = [self getUTCFormattedDate:date];
-    [self.exifDictionary setObject:dateString forKey:(NSString*)kCGImagePropertyExifDateTimeOriginal];
+    NSString *key = kCGImagePropertyExifDateTimeOriginal;
+    [self setValue:dateString forExifKey:key];
 
 }
 
@@ -95,6 +99,18 @@
     
     [self.tiffDictionary setObject:description forKey:(NSString *)kCGImagePropertyTIFFImageDescription];
     
+}
+
+- (void)addProjection:(NSString *)projection {
+
+    [self setValue:projection forExifKey:kCGImagePropertyProjection];
+
+}
+
+- (void)setValue:(NSString *)key forExifKey:(NSString *)value {
+
+    [self.exifDictionary setObject:value forKey:key];
+
 }
 
 - (NSDictionary *)exifData {

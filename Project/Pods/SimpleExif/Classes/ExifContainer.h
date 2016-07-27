@@ -13,9 +13,12 @@
 @interface ExifContainer : NSObject
 
 - (void)addLocation:(CLLocation *)currentLocation;
-- (void)addUserComment:(NSString*)comment;
+- (void)addUserComment:(NSString *)comment;
 - (void)addCreationDate:(NSDate *)date;
-- (void)addDescription:(NSString*)description;
+- (void)addDescription:(NSString *)description;
+- (void)addProjection:(NSString *)projection;
+
+- (void)setValue:(NSString *)key forExifKey:(NSString *)value;
 
 - (NSDictionary *)exifData;
 @end
