@@ -18,7 +18,7 @@
 - (void)addDescription:(NSString *)description;
 - (void)addProjection:(NSString *)projection;
 
-- (void)setValue:(NSString *)key forExifKey:(NSString *)value;
+- (void)setValue:(NSString *)value forExifKey:(NSString *)key;
 
 - (NSDictionary *)exifData;
 @end
